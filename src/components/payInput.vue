@@ -69,7 +69,7 @@ export default {
     //执行方法
     methods: {
         focus() {
-            this.$refs.payInput.focus();
+            this.$refs.pay_Input.focus();
             this.status.focus = true;
         },
         blur() {
