@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 // import router from './router'
-import payInput from '@/components/index.js'
-console.log('tag', payInput)
+import payInput from 'vue-pay-input'
 Vue.use(payInput)
 Vue.config.productionTip = false
 

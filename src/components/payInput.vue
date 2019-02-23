@@ -17,6 +17,7 @@
 </template>
 <script type="text/ecmascript-6">
 export default {
+    name:"payInput",
     model: {
         prop: "val",
         event: "pay"

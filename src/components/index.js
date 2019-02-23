@@ -10,4 +10,5 @@ if (typeof window !== 'undefined' && window.Vue) {
     window.Vue.use(payInput)
 }
 
+
 export default payInput
