@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import payInput from "./components/payInput";
+// import payInput from "./components/payInput";
 export default {
     name: "App",
     data() {
@@ -19,7 +19,7 @@ export default {
         };
     },
     components: {
-        payInput
+        // payInput
     },
     methods: {
         clear() {

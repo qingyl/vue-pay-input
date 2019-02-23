@@ -1,8 +1,10 @@
-import payInput from './payInput'
 
-payInput.install = function(Vue) {
-    Vue.component(payInput.name, payInput)
-}
+import payInputs from './payInput.vue'
+var payInput = {
+    install(Vue, options) {
+        Vue.component('payInput', payInputs)
+    }
+};
 
 if (typeof window !== 'undefined' && window.Vue) {
     window.Vue.use(payInput)
