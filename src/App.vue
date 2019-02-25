@@ -1,25 +1,27 @@
 <template>
   <div id="app">
-    <payInput ref="payInput" @change="change" payItem="pay-item" v-model="vals" :type="type" :len="6"></payInput>
+    <payInput ref="payInput" @change="change" :styles="styles" payItem="pay-item" v-model="vals" :type="type" :len="6"></payInput>
     <div class="" @click="clear">清除</div>
     <div class="" @click="focus">获取焦点</div>
     <div class="" @click="blur">失去焦点</div>
     <div class="" @click="show">显示密码</div>
+    <div class="" @click="stylefun">风格选择</div>
   </div>
 </template>
 
 <script>
-// import payInput from "./components/payInput";
+import payInput from "./components/payInput";
 export default {
     name: "App",
     data() {
         return {
             vals: "",
+            styles:'merge',
             type:'password'
         };
     },
     components: {
-        // payInput
+        payInput
     },
     methods: {
         clear() {
@@ -36,6 +38,9 @@ export default {
         },
         show(){
           this.type=='password'?this.type='text':this.type='password'
+        },
+        stylefun(){
+            this.styles=='separate'?this.styles='merge':this.styles='separate'
         }
     }
 };
