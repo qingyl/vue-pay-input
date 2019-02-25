@@ -1,6 +1,6 @@
 {
     "name": "vue-pay-input",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A Vue.js project",
     "author": "qingyl<397260607@@.com>",
     "private": false,
@@ -32,7 +32,7 @@
         "vue-router": "^3.0.1"
     },
     "devDependencies": {
-        "vue-pay-input": "^1.0.4",
+        "vue-pay-input": "^1.0.5",
         "autoprefixer": "^7.1.2",
         "babel-core": "^6.22.1",
         "babel-helper-vue-jsx-merge-props": "^2.0.3",
