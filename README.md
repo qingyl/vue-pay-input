@@ -3,7 +3,7 @@
 ## Description
 
 Demo
-https://7mz7103wjq.codesandbox.io/
+https://5yojky3vr4.codesandbox.io/
 
 ## Install
 
@@ -14,9 +14,14 @@ $ npm i vue-pay-input --save
 
 
 ## Usage
+```javascript
+  //main.js
+   import payInput from 'vue-pay-input'
+   Vue.use(payInput)
+
+```
 ```html
- import payInput from 'vue-pay-input'
- Vue.use(payInput)
+
 <template>
   <div >
      <payInput ref="payInput" @change="change" payItem="pay-item" v-model="value" :type="type" :len="6"></payInput>
