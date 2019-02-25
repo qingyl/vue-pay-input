@@ -24,7 +24,7 @@ $ npm i vue-pay-input --save
 
 <template>
   <div >
-     <payInput ref="payInput" @change="change" payItem="pay-item" v-model="value" :type="type" :len="6"></payInput>
+     <payInput ref="payInput" @change="change" :styles="styles" payItem="pay-item" v-model="value" :type="type" :len="6"></payInput>
   </div>
 </template>
 <script>
@@ -32,6 +32,7 @@ $ npm i vue-pay-input --save
       data() {
         return {
             value: "",
+            styles:'merge',
             type:'password'
         };
     },
@@ -52,6 +53,9 @@ $ npm i vue-pay-input --save
         },
         show(){
           this.type=='password'?this.type='text':this.type='password'
+        },
+         stylefun(){
+            this.styles=='separate'?this.styles='merge':this.styles='separate'
         }
     }
   }
@@ -62,9 +66,10 @@ $ npm i vue-pay-input --save
 
 | Name         | Type      | Default      | Description              |
 |--------------|-----------|--------------|--------------------------|
-| len          | number    | 4            | input value length       |
-| value        | string    | ''           | default input value      |
-| type         | string    | password     | 'password' or 'text'     |
+| len          | number    | 4            | input value length    输入框的长度   |
+| value        | string    | ''           | default input value   v-model绑定值   |
+| type         | string    | password     | 'password' or 'text'  是否显示输入内容     |
+| styles       | string    | separate     | 'separate' or 'merge'  风格选择     |
 
 
 ## API
