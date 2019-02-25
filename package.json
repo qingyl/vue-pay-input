@@ -10,7 +10,15 @@
         "payInput",
         "input",
         "pay"
-      ],
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:qingyl/vue-pay-input.git"
+    },
+    "bugs": {
+        "url": "https://github.com/qingyl/vue-pay-input/issues"
+    },
+    "homepage": "https://github.com/qingyl/vue-pay-input#readme",
     "scripts": {
         "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
         "start": "npm run dev",
@@ -24,7 +32,7 @@
         "vue-router": "^3.0.1"
     },
     "devDependencies": {
-        "vue-pay-input":"^1.0.4",
+        "vue-pay-input": "^1.0.4",
         "autoprefixer": "^7.1.2",
         "babel-core": "^6.22.1",
         "babel-helper-vue-jsx-merge-props": "^2.0.3",
